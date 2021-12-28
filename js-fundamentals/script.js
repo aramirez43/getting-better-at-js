@@ -194,8 +194,215 @@
 // console.log(n);
 
 //Assignment 7
-'9'-'5';//4
-'19'-'13'+'17';//617
-'19'-'13'+17;//23
-'123'<57;// false
-5+6+'4'+9-4-2;//1143
+// '9'-'5';//4
+// '19'-'13'+'17';//617
+// '19'-'13'+17;//23
+// '123'<57;// false
+// 5+6+'4'+9-4-2;//1143
+
+//Truthy And Falsy
+//5 falsy values: 0, '', undefined, null, NaN
+//Everything else is a Truthy
+// console.log(Boolean(0))
+// console.log(Boolean(undefined))
+// console.log(Boolean('jonas'))
+// console.log(Boolean({}))
+//
+// const money = 0;
+// if(money) {
+//     console.log("Dont Spend it all");
+// }else {
+//     console.log('you should get a job')
+// }
+//
+// let height;
+// if(height) {
+//     console.log('yay height is defined')
+// } else {
+//     console.log('height is undefined')
+// }
+//Equality operators == vs ===
+//=== is strict and doesnt do type coercion
+//== is loose and does type coercion
+// const age = 18;
+// if (age === 18) console.log('you just became an adult')
+// if (age == '18') console.log('you just became an adult')
+//
+// const favorite = Number(prompt("whats your favorite number"));
+// console.log(favorite)
+// console.log(typeof favorite)
+//
+// if (favorite === 12) {
+//     console.log('cool 12 is an amazing number')
+// }else if (favorite === 7) {
+//     console.log('7 is also a cool number')
+// }else {
+//     console.log('number is not 23 or 7')
+// }
+//
+// if (favorite !== 23) {
+//     console.log('why not 23')
+// }
+
+//Assignment 8
+
+// const numNeighbors = Number(prompt('How many neighbour countries does your country have?'))
+//
+// if (numNeighbors === 1) {
+//     console.log('Only 1 border!')
+// }else if (numNeighbors > 1) {
+//     console.log('More than 1 border')
+// }else {
+//     console.log('no borders')
+// }
+
+//Boolean Logic
+//AND operator returns true if both statements are true. Anything else is false
+//OR operator returns true if one statement is true
+
+//Logical Operators
+// const hasDriversLicense = true;
+// const hasGoodVision = true;
+// console.log(hasDriversLicense && hasGoodVision)//&& = and
+// console.log(hasDriversLicense || hasGoodVision)// || = or
+// console.log(!hasDriversLicense)// ! = Not
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+// if(shouldDrive) {
+//     console.log('Sarah is able to drive')
+// }else {
+//     console.log('Someone else should drive')
+// }
+
+// const isTired = false;
+// console.log(hasDriversLicense || hasGoodVision || isTired)
+//
+// if(hasDriversLicense && hasGoodVision && !isTired) {
+//     console.log('Sarah is able to drive')
+// }else {
+//     console.log('Someone else should drive')
+// }
+
+//Assignment 9
+// let country = 'United States'
+// let continent = 'North America'
+// let population = 329500000;
+// const language = 'English';
+// const isIsland = false;
+//
+// if (population < 50000000 && language === 'English' && !isIsland) {
+//     console.log('You should live in USA')
+// }else {
+//     console.log('USA Doesnt meet your criteria')
+// }
+
+//Coding Challenge
+// const dolphinsAvgScore = 94;
+// const dolphinsAvgScore = (97 + 112 + 101) / 3;
+// const dolphinsAvgScore = (97 + 112 + 101) / 3;
+// console.log(dolphinsAvgScore)
+// const KoalasAvgScore = (95) / 3;
+// const KoalasAvgScore = (109 + 95 + 123) / 3;
+// const KoalasAvgScore = (109 + 95 + 106) / 3;
+// console.log(KoalasAvgScore)
+// const dolphinsMinimumScore = dolphinsAvgScore > 100;
+// const koalasMinimumScore = KoalasAvgScore > 100
+
+// if (dolphinsMinimumScore && !koalasMinimumScore) {
+//     console.log('Dolphins Win because of minimum score')
+// }else if (koalasMinimumScore && !dolphinsMinimumScore) {
+//     console.log('Koalas Win because of minimum score')
+// }else if (KoalasAvgScore === dolphinsAvgScore && !dolphinsMinimumScore && !koalasMinimumScore) {
+//     console.log('both loose')
+// } else if (!dolphinsMinimumScore && !koalasMinimumScore) {
+//     console.log('no one wins')
+// } else if (dolphinsAvgScore > KoalasAvgScore) {
+//     console.log('Dolphins Win')
+// } else if (KoalasAvgScore > dolphinsAvgScore) {
+//     console.log('Koalas Win')
+// }else if (dolphinsAvgScore === KoalasAvgScore) {
+//     console.log("It's a Draw")
+// }
+
+//Switch Statement
+// const day = 'thursday';
+//
+// switch (day) {
+//     case 'monday': //day === 'monday'
+//         console.log('Plan course structure');
+//         console.log('go to coding meetup');
+//         break;
+//     case 'tuesday':
+//         console.log('prepare theory videos');
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log('Write code examples')
+//         break;
+//     case 'friday':
+//         console.log('record videos')
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//         console.log('enjoy the weekend')
+//         break;
+//     default:
+//         console.log('not a valid day')
+// }
+//
+// const today = 'sunday';
+//
+// if (today === 'monday') {
+//     console.log('Plan course structure');
+//     console.log('go to coding meetup');
+// } else if (today === 'tuesday') {
+//     console.log('prepare theory videos');
+// } else if (today === 'wednesday' || today === 'thursday') {
+//     console.log('Write code examples')
+// }else if (today === 'friday') {
+//     console.log('record videos')
+// }else if (today === 'saturday' || today === 'sunday') {
+//     console.log('enjoy the weekend')
+// }else {
+//     console.log('not a valid day')
+// }
+
+//Assignment 10
+// const language = 'french';
+//
+// switch (language) {
+//     case 'chinese':
+//     case 'mandarin':
+//         console.log('Most number of native speakers')
+//         break;
+//     case 'spanish':
+//         console.log('2nd place in number of native speakers')
+//         break;
+//     case 'english':
+//         console.log('3rd place')
+//         break;
+//     case 'hindi':
+//         console.log('Number 4')
+//         break;
+//     case 'arabic':
+//         console.log('5th most spoken language')
+//         break;
+//     default:
+//         console.log('great language too')
+// }
+
+//ternary conditional
+// ? has 3 parts condition, if, and else
+// const age = 21;
+// age >= 18 ? console.log('I like to drink wine'):
+//     console.log('I like to drink water');
+//
+// const drink = age >= 18 ? 'wine' : 'water'
+// console.log(drink)
+//
+// console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`)
+
+//Assignment 11
+// const population = 329500000;
+
+// const avgPopulation = population > 33000000 ? 'above' : 'below';
+// console.log(`USA's population is ${population > 33000000 ? 'above' : 'below'}`)
