@@ -406,3 +406,4 @@
 
 // const avgPopulation = population > 33000000 ? 'above' : 'below';
 // console.log(`USA's population is ${population > 33000000 ? 'above' : 'below'}`)
+jo
