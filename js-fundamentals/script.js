@@ -407,7 +407,16 @@
 // const avgPopulation = population > 33000000 ? 'above' : 'below';
 // console.log(`USA's population is ${population > 33000000 ? 'above' : 'below'}`)
 // hello this is a test with vs code 
-console.log('joe mama');
-console.log('test')
-console.log('test')
-console.log('test')
+
+//Coding Challenge
+
+// const bill = 430
+// const tip = bill * .15
+// const tipTwo = bill * .20
+// bill < 300 && bill > 50 ? console.log(`The bill was ${bill}, the tip was ${tip}, and the total value  ${bill + (tip)}`) : console.log(`The bill was ${bill}, the tip was ${tipTwo}, and the total value  ${bill + (tipTwo)}`)
+
+// const bill = 40
+// const tip = bill < 300 && bill > 50 ? bill * .15 : bill * .20
+// console.log(`The bill was ${bill}, the tip was ${tip}, and the total value  ${bill + (tip)}`)
+
+
