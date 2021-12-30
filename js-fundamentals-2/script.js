@@ -39,3 +39,65 @@
 // //you dont always have to use a variable in a function
 // const theUsa = describeCountry('USA', 329500000, 'Washington');
 // console.log(theUsa)
+//
+//Function declarations vs expressions
+
+// function calcAge1 (birthYear) {
+//     return 2037 - birthYear;
+// }
+
+// const age1 = calcAge1(2000);
+// console.log(age1);
+
+// //Function Expression
+
+// const calcAge2 = function (birthYear) {
+//     return 2037 - birthYear;
+// }
+
+// const age2 = calcAge2(2000);
+// console.log(age2)
+
+// //Expressions produce values
+// //Function declarations can be called before they are defined
+
+//Assignment 2
+
+// function percentageOfWorld1(population) {
+//     return (population / 7900) * 100;
+// }
+
+// const UsaPopulation = percentageOfWorld1(329500000);
+// const MexPopulation = percentageOfWorld1(128000000);
+// const CanadaPopulation = percentageOfWorld1(38000000);
+// console.log(UsaPopulation, MexPopulation, CanadaPopulation);
+
+// const percentageOfWorld2 = function (population) {
+//     return (population / 7900) * 100;
+// }
+
+// const UsaPopulation2 = percentageOfWorld2(329500000);
+// const MexPopulation2 = percentageOfWorld2(128000000);
+// const CanadaPopulation2 = percentageOfWorld2(38000000);
+// console.log(UsaPopulation2, MexPopulation2, CanadaPopulation2);
+
+//arrow function 
+//this for simple stuff
+// const calcAge3 = birthYear => 2037 - birthYear;
+// const age3 = calcAge3(2000);
+// console.log(age3);
+// //this for complex
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//     const age = 2037 - birthYear;
+//     const retirement = 65 - age;
+//     // return retirement;
+//     return `${firstName} retires in ${retirement} years`
+// }
+
+// console.log(yearsUntilRetirement(2000, 'Alan'));
+// //arrow functions dont get a this keyword
+
+// const percentageOfWorld3 = population => (population / 7900) * 100;
+
+// const UsaPopulation3 = percentageOfWorld3(329500000);
+// console.log(UsaPopulation3);
