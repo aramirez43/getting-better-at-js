@@ -97,7 +97,91 @@
 // console.log(yearsUntilRetirement(2000, 'Alan'));
 // //arrow functions dont get a this keyword
 
+//Assignment 3
+
 // const percentageOfWorld3 = population => (population / 7900) * 100;
 
 // const UsaPopulation3 = percentageOfWorld3(329500000);
 // console.log(UsaPopulation3);
+
+//Functions calling other functions
+
+// function cutFruitPieces(fruit) {
+//     return fruit * 4;
+// }
+
+// function fruitProcessor(apples, oranges) {
+//     const applePieces = cutFruitPieces(apples);
+//     const orangePieces = cutFruitPieces(oranges);
+//     const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges.`;
+//     return juice;
+// }
+
+// console.log(fruitProcessor(2, 3));
+
+//Assignment 4
+
+
+// function percentageOfWorld1(populationNum) {
+//     return (populationNum / 7900) * 100;
+// }
+
+// function describePopulation(country, population) {
+//     const percentage = percentageOfWorld1(population);
+//     const descriptionOfCountry = `${country} has ${population} million people, which is about ${percentage}% of the world`;
+
+//     return descriptionOfCountry;
+
+// }
+
+// console.log(describePopulation('USA', 329.5))
+// console.log(describePopulation('Mexico', 128))
+// console.log(describePopulation('Canada', 38))
+
+//Reviewing Functions
+
+// const calcAge = function(birthYear) {
+//     return 2037 - birthYear;
+// }
+
+// const yearsUntilRetirement = function (birthYear, firstName) {
+//     const age = calcAge(birthYear);
+//     const retirement = 65 - age;
+
+//     if (retirement > 0) {
+//         console.log(`${firstName} retires in ${retirement} years`);
+//         return retirement
+//     } else {
+//         console.log(`${firstName} has already retired`);
+//         return -1
+//     }
+// }
+
+// console.log(yearsUntilRetirement(1950, 'Mike'))
+
+//Coding Challenge 1
+
+const calcAverage = (score1, score2, score3) => {
+    const totalAverage = (score1 + score2 + score3) / 3;
+    return totalAverage;
+}
+const dolphinsAvgScore = calcAverage(44, 23, 71);
+// console.log(dolphinsAvgScore);
+const koalasAvgScore = calcAverage(65, 54, 49);
+// console.log(koalasAvgScore)
+
+function checkWinner (avgDolphin, avgKoala) {
+
+    if  (avgKoala >= 2 * avgDolphin){
+        console.log(`Koalas win (${avgKoala} vs $ avgDolphin})`)
+    } else if (avgDolphin >= 2 * avgKoala) {
+        console.log(`Dolphins win ($ avgDolphin} vs ${avgKoala})`)
+    }else {
+        console.log('No teams win')
+    }
+}
+
+checkWinner (dolphinsAvgScore, koalasAvgScore)
+
+
+
