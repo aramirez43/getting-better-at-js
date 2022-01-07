@@ -296,6 +296,189 @@
 // neighbors[0] = 'Japan';
 // console.log(neighbors)
 
+//Coding Challenge 2
+
+// function calcTip(bill) {
+
+//     if (bill >= 50 && bill <= 300) {
+//         const tip = bill * .15;
+//         return tip
+//     }else {
+//         const tip = bill * .20;
+//         return tip
+//     }
+// }
+
+// const bills = [125, 555, 44];
+
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+// console.log(tips);
+
+// console.log(total);
+
+//Intro to objects
+
+//Inside is called properties like firstName
+//Objects for unstructured and named data
+
+// const alan = {
+//     firstName: 'Alan',
+//     lastName: 'Ramirez',
+//     age: 2037 - 2000,
+//     friends: ['Michael', 'Peter', 'Steven']
+// };
+
+//Assignment 7
+
+// const myCountry = {
+//     country: 'USA',
+//     capital: 'Washington',
+//     language: 'English',
+//     population: 329.5,
+//     neighbors: ['Mexico', 'Canada']
+// };
+
+//DOT vs Bracket Notation
+
+// const alan = {
+//     firstName: 'Alan',
+//     lastName: 'Ramirez',
+//     age: 2037 - 2000,
+//     job: 'Web Developer',
+//     friends: ['Michael', 'Peter', 'Steven']
+// };
+
+// //DOT is an operator
+// console.log(alan.lastName);
+
+// //Bracket notation can put any expression
+// console.log(alan['lastName']);
+
+// //This would not work with DOT
+// const nameKey = 'Name';
+// console.log(alan['first' + nameKey]);
+// console.log(alan['last' + nameKey]);
+
+// //Computing property is for Bracket then use DOT for cleaner and simple
+// const interestedIn = prompt('What do you want to know about Alan? Choose between firstName, lastName, age, job, and friends.');
+// console.log(alan[interestedIn]);
+
+// if(alan[interestedIn]) {
+//     console.log(alan[interestedIn]);
+// }else {
+//     console.log('Wrong request! Choose between firstName, lastName, age, job, and friends.')
+// }
+
+// //You can add properties like this
+// alan.location = 'USA';
+// alan['github'] = 'aramirez43';
+// console.log(alan);
+
+// //Challenge
+// //"Alan has 3 friends, and his best friend is called Michael."
+
+// console.log(`${alan.firstName} has ${alan.friends.length} friends, and his best friend is called ${alan.friends[0]}`);
+
+//Assignment 8
+
+// const myCountry = {
+//     country: 'USA',
+//     capital: 'Washington',
+//     language: 'English',
+//     population: 329.5,
+//     neighbors: ['Mexico', 'Canada']
+// };
+
+// console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}`);
+
+// myCountry.population += 2
+// console.log(myCountry.population);
+// myCountry['population'] -= 2;
+// console.log(myCountry['population']);
+
+//Object Methods
+//Function attached to object is a method and can only use expression functions
+
+// const alan = {
+//     firstName: 'Alan',
+//     lastName: 'Ramirez',
+//     birthYear: 2000,
+//     job: 'Web Developer',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriversLicense: true,
+
+//     //you can use this method to pass the birth year from alan
+//     //Also can use it to make a new property
+//     calcAge: function() {
+//         this.age = 2037 - this.birthYear;
+//         return this.age
+//     }
+// };
+
+// console.log(alan.calcAge());
+// console.log(alan.age);
+// console.log(alan['calcAge'](2000));
+
+//Challenge
+//Alan is a 37-year old Web Developer, and he has a driver's license
+
+// const alan = {
+//     firstName: 'Alan',
+//     lastName: 'Ramirez',
+//     birthYear: 2000,
+//     job: 'Web Developer',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriversLicense: true,
+
+//     calcAge: function() {
+//                 this.age = 2037 - this.birthYear;
+//                 return this.age
+//             },
+
+//     alanDescription: function() {
+//         if (this.hasDriversLicense) {
+//             const description = `${this.firstName} is a ${this.calcAge()} old ${this.job}, and he has a driver's license.`
+//             return description
+//         }else {
+//             const description = `${this.firstName} is a ${this.calcAge()} old ${this.job}, and he does not have a driver's license.`
+//             return description
+//         }
+//     }
+// }
+
+// console.log(alan.calcAge())
+// console.log(alan.alanDescription())
+
+//Assignment 9
+
+// const myCountry = {
+//     country: 'USA',
+//     capital: 'Washington',
+//     language: 'English',
+//     population: 329.5,
+//     neighbors: ['Mexico', 'Canada'],
+
+//     describe: function() {
+//         console.log( `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbors.length} neighboring countries and a capital called ${this.capital}`);
+//     },
+
+//     checkIsIsland: function() {
+//         this.isIsland = this.neighbors.length === 0 ? true : false;
+//     }
+// };
+
+// myCountry.describe();
+// myCountry.checkIsIsland();
+// console.log(myCountry);
+
+
+
+
+
+
 
 
 
