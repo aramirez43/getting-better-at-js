@@ -474,6 +474,152 @@
 // myCountry.checkIsIsland();
 // console.log(myCountry);
 
+//Coding Challenge 3
+
+// const mark = {
+//     fullName: 'Mark Miller',
+//     weight: 78,
+//     height: 1.69,
+
+//     calcBMI: function() {
+//         this.BMI = this.weight / this.height ** 2;
+//         return this.BMI
+//     }
+// };
+
+// mark.calcBMI();
+// console.log(mark);
+
+// const john = {
+//     fullName: 'John Smith',
+//     weight: 92,
+//     height: 1.95,
+
+//     calcBMI: function() {
+//         this.BMI = this.weight / this.height ** 2;
+//         return this.BMI
+//     }
+// };
+
+// john.calcBMI();
+// console.log(john);
+
+// console.log(`Johns BMI (${john.calcBMI()}) is ${john.calcBMI() > mark.calcBMI() ? 'higher': 'lower'} than Mark's (${mark.calcBMI()})!`);
+
+//Iteration: The Loop
+
+// console.log('Listing wights repetition 1');
+// console.log('Listing wights repetition 2');
+// console.log('Listing wights repetition 3');
+// console.log('Listing wights repetition 4');
+// console.log('Listing wights repetition 5');
+// console.log('Listing wights repetition 6');
+// console.log('Listing wights repetition 7');
+// console.log('Listing wights repetition 8');
+// console.log('Listing wights repetition 9');
+// console.log('Listing wights repetition 10');
+
+//for loop
+//use let because it will change
+//after semicolon if its true the loop will keep going. if its false the loop will stop
+//after second semi colon we add 1 to up the counter
+// for(let rep = 1; rep <= 10; rep ++) {
+//     console.log(`Listing wights repetition ${rep}`);
+// };
+
+//Assignment 10 
+
+// for(let voterNumber = 1; voterNumber <= 50; voterNumber++) {
+//     console.log(`Voter number ${voterNumber} is currently voting`)
+// }
+
+//Looping Arrays, Breaking and Continuing
+
+//log the five elements
+// const alansArray = [
+//     'Alan',
+//     'Ramirez',
+//     2037 - 2000,
+//     'Web Developer',
+//     ['Michael', 'Peter', 'Steven'],
+//     'Jay'
+// ];
+
+// //Alan[5] does not exist so it should be below 5
+
+// for(let i = 0; i < 5 ;i++) {
+//     console.log(alansArray[i]);
+// }
+
+// //or if you want it to be the same as the array every time
+// const types = [];
+
+
+// for(let i = 0; i < alansArray.length ;i++) {
+//     //Reading types array
+//     console.log(alansArray[i], typeof alansArray[i]);
+
+//     //Filling types array
+//     types[i] = typeof alansArray[i];
+//     //Another way to fill
+//     // types.push(typeof alansArray[i]);
+// }
+
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(2037 - years[i]);
+// }
+
+// console.log(ages);
+
+// //continue and break the loop
+// //continue skips iteration 
+// //break terminates loop
+
+// for(let i = 0; i < alansArray.length ;i++) {
+//     //Only strings are allowed
+//     if (typeof alansArray[i] !== 'string') continue;
+//     console.log(alansArray[i], typeof alansArray[i]);
+
+// }
+
+// for(let i = 0; i < alansArray.length ;i++) {
+//     //stop if there is a number
+//     if (typeof alansArray[i] === 'number') break;
+//     console.log(alansArray[i], typeof alansArray[i]);
+
+// }
+
+//Assignment 11
+
+// const populations = [329.5, 129, 126, 51];
+// const percentages = [];
+
+// function percentageOfWorld1(population) {
+//     return (population / 7900) * 100;
+// }
+
+// for(let i = 0; i < populations.length; i++) {
+//     const perc = percentageOfWorld1(populations[i]);
+//     percentages.push(perc);
+// };
+
+// console.log(percentages)
+
+//Looping backwards and loops in loops
+
+const alansArray = [
+    'Alan',
+    'Ramirez',
+    2037 - 2000,
+    'Web Developer',
+    ['Michael', 'Peter', 'Steven']
+];
+
 
 
 
