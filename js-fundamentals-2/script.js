@@ -604,27 +604,199 @@
 // }
 
 // for(let i = 0; i < populations.length; i++) {
-//     const perc = percentageOfWorld1(populations[i]);
-//     percentages.push(perc);
+//     const percentage = percentageOfWorld1(populations[i]);
+//     percentages.push(percentage);
 // };
 
 // console.log(percentages)
 
 //Looping backwards and loops in loops
 
-const alansArray = [
-    'Alan',
-    'Ramirez',
-    2037 - 2000,
-    'Web Developer',
-    ['Michael', 'Peter', 'Steven']
-];
+// const alansArray = [
+//     'Alan',
+//     'Ramirez',
+//     2037 - 2000,
+//     'Web Developer',
+//     ['Michael', 'Peter', 'Steven']
+// ];
+
+// //0,1,...,4
+// //4,3,...,0
+
+// for (let i = alansArray.length - 1; i >= 0; i--) {
+//     //This one goes backwards
+//     console.log(alansArray[i]);
+// }
+
+// const testArray = [-6, -91, 1011, -100, 84, -22, 0, 1, 473]
 
 
+// function solution() {
+//     for(let i = 0; i < testArray.length; i++) {
+//         let max = testArray[0]
+//         if (testArray[i] % 4 == 0 && testArray[i] > max) {
+//             return console.log('it worked')
+//         } else {
+//           return console.log('it didnt work')
+//         }
+//     }
+// }
+
+// function solution(numbers, number) { 
+//     let multiples = [];
+//     let max = numbers[0];
+//     for (let i = 0; i < numbers.length; i++) {
+//       if (numbers[i] % number === 0 && numbers[i] > max) {
+//         multiples.push(numbers[i]);
+//       }
+//     }
+  
+//     return multiples;
+//   }
+
+//   console.log(multiplesOf([-6, -91, 1011, -100, 84, -22, 0, 1, 473], 4))
+// console.log(solution());
 
 
+// const test = 123
+// console.log(test.toString().length)
 
+// function solution(n, k) {
+//     const numVariable = n
+//     const arrayOfNumbers = Array.from(String(numVariable), Number)
+//     const newArray = []
+//     console.log(arrayOfNumbers)
+//     for(let i = 0; i < arrayOfNumbers.length; i++) {
+//         if (arrayOfNumbers[i] < 10) {
+//             const arrayMath = arrayOfNumbers[i] + k
+//             newArray.push(arrayMath)
+//             return console.log(newArray)
+//         } else if (arrayOfNumbers[i] > 9) {
+//             const arrayMath = arrayOfNumbers[i++]
+//             return console.log(arrayMath)
+//         }
+//     }
+// }
 
+// console.log(solution(512, 10))
+
+// const alansArray = [
+//     'Alan',
+//     'Ramirez',
+//     2037 - 2000,
+//     'Web Developer',
+//     ['Michael', 'Peter', 'Steven']
+// ];
+
+// //4,3,...,0
+
+// for(let i = alansArray.length - 1; i >= 0; i--) {
+//     console.log(i, alansArray[i]);
+// };
+
+// //Create a loop inside of a loop
+
+// for(let exercise = 1; exercise <= 4; exercise++) {
+//     console.log(`------- Starting Exercise ${exercise}`);
+
+//     for(let rep = 1; rep < 6; rep++) {
+//         console.log(`Lifting weight repetition ${rep}`)
+//     };
+// };
+
+//Assignment 12
+
+// const listOfNeighbors = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+// for(let i = 0; i < listOfNeighbors.length; i++) {
+//     for (let y = 0; y < listOfNeighbors[i].length; y++) {
+//         console.log(`Neighbor: ${listOfNeighbors[i][y]}`);
+//     };
+// };
+
+//The While Loop
+
+// for(let rep = 1; rep <= 10; rep++) {
+//     console.log(`lifting weight repetition ${rep}`);
+// };
+
+//Will run while condition is true
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`lifting weight repetition ${rep}`);
+//     rep++;
+// };
+
+//This one doesn't depend on a counter but a random variable
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+
+// while (dice !== 6) {
+//     console.log(`You rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if(dice === 6) console.log('loop is about to end....');
+// }
+
+//Assignment 13 
+
+// const populations = [329.5, 129, 126, 51];
+// const percentages3 = [];
+
+// function percentageOfWorld1(population) {
+//     return (population / 7900) * 100;
+// }
+
+// let i = 0;
+
+// while(i < populations.length) {
+//     const percentage = percentageOfWorld1(populations[i]);
+//     percentages3.push(percentage);
+//     i++;
+// };
+
+// console.log(percentages3);
+
+//Coding Challenge 4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips = [];
+
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i])
+    tips.push(tip)
+    const total = tip + bills[i]
+    totals.push(total)
+    
+}
+
+function calcTip(bill) {
+
+    if (bill >= 50 && bill <= 300) {
+        const tip = bill * .15;
+        return tip
+    }else {
+        const tip = bill * .20;
+        return tip
+    }
+};
+
+function calcAverage(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        // sum = sum + arr[i]
+        sum += arr[i]
+    }
+    return sum / arr.length;
+}
+
+console.log(calcAverage([2, 3, 7]));
+console.log(calcAverage(totals));
+
+console.log(tips);
+console.log(totals);
 
 
 
