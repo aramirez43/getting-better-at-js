@@ -1,33 +1,33 @@
-'use strict'; //This is activating strict mode
-// 
+"use strict"; //This is activating strict mode
+//
 // let hasDriversLicense = false;
 // const passTest = true;
-// 
+//
 // if(passTest) hasDriversLicense = true;
 // if (hasDriversLicense) console.log('I can drive');
-// 
-//Functions 
-// 
+//
+//Functions
+//
 // function logger() { //logger is the name of the function
 //     console.log('My name is Alan')
 // }
-// 
-// logger();// This is calling / running/ invoking the function 
-// 
+//
+// logger();// This is calling / running/ invoking the function
+//
 // function fruitProcessor(apples, oranges) { //inside parenthesis are parameters
 //     console.log(apples, oranges);
 //     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
 //     return juice;
 // }
-// 
+//
 // const appleJuice = fruitProcessor(2, 3); //values will be assigned to parameters also called arguments and then replaced by juice
-// 
+//
 // console.log(appleJuice);// You have to store in a variable to get result then console log it
 // console.log(fruitProcessor(5,0)); //This logs results but doesnt store it in a variable
-// 
+//
 // const appleOrangeJuice = fruitProcessor(6, 9)
 // console.log(appleOrangeJuice);
-// 
+//
 //Do not repeat yourself = DRY
 
 //Assignment 1
@@ -81,7 +81,7 @@
 // const CanadaPopulation2 = percentageOfWorld2(38000000);
 // console.log(UsaPopulation2, MexPopulation2, CanadaPopulation2);
 
-//arrow function 
+//arrow function
 //this for simple stuff
 // const calcAge3 = birthYear => 2037 - birthYear;
 // const age3 = calcAge3(2000);
@@ -120,7 +120,6 @@
 // console.log(fruitProcessor(2, 3));
 
 //Assignment 4
-
 
 // function percentageOfWorld1(populationNum) {
 //     return (populationNum / 7900) * 100;
@@ -527,7 +526,7 @@
 //     console.log(`Listing wights repetition ${rep}`);
 // };
 
-//Assignment 10 
+//Assignment 10
 
 // for(let voterNumber = 1; voterNumber <= 50; voterNumber++) {
 //     console.log(`Voter number ${voterNumber} is currently voting`)
@@ -554,7 +553,6 @@
 // //or if you want it to be the same as the array every time
 // const types = [];
 
-
 // for(let i = 0; i < alansArray.length ;i++) {
 //     //Reading types array
 //     console.log(alansArray[i], typeof alansArray[i]);
@@ -577,7 +575,7 @@
 // console.log(ages);
 
 // //continue and break the loop
-// //continue skips iteration 
+// //continue skips iteration
 // //break terminates loop
 
 // for(let i = 0; i < alansArray.length ;i++) {
@@ -630,7 +628,6 @@
 
 // const testArray = [-6, -91, 1011, -100, 84, -22, 0, 1, 473]
 
-
 // function solution() {
 //     for(let i = 0; i < testArray.length; i++) {
 //         let max = testArray[0]
@@ -642,7 +639,7 @@
 //     }
 // }
 
-// function solution(numbers, number) { 
+// function solution(numbers, number) {
 //     let multiples = [];
 //     let max = numbers[0];
 //     for (let i = 0; i < numbers.length; i++) {
@@ -650,13 +647,12 @@
 //         multiples.push(numbers[i]);
 //       }
 //     }
-  
+
 //     return multiples;
 //   }
 
 //   console.log(multiplesOf([-6, -91, 1011, -100, 84, -22, 0, 1, 473], 4))
 // console.log(solution());
-
 
 // const test = 123
 // console.log(test.toString().length)
@@ -737,7 +733,7 @@
 //     if(dice === 6) console.log('loop is about to end....');
 // }
 
-//Assignment 13 
+//Assignment 13
 
 // const populations = [329.5, 129, 126, 51];
 // const percentages3 = [];
@@ -769,7 +765,7 @@
 //     tips.push(tip)
 //     const total = tip + bills[i]
 //     totals.push(total)
-    
+
 // }
 
 // function calcTip(bill) {
@@ -798,5 +794,8 @@
 // console.log(tips);
 // console.log(totals);
 
+function addStrings(string1, string2) {
+  return string1 + string2;
+}
 
-
+console.log(addStrings("hello", "world"));
